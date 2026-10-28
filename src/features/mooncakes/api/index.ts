@@ -1,0 +1,81 @@
+import { MooncakeItem } from "../types";
+
+export const MOCK_MOONCAKES: MooncakeItem[] = [
+  {
+    id: "moon-01",
+    name: "Golden Yolk White Lotus",
+    category: "baked",
+    crustDescription: "Traditional golden-brown artisan crust baked with pure peanut oil",
+    fillingDescription: "Velvety single-origin Xianglian lotus seed paste encasing dual organic salted egg yolks.",
+    price: 185000,
+    imageUrl: "https://images.unsplash.com/photo-1599785209707-a456fc1337bb?q=80&w=800&auto=format&fit=crop",
+    isOnlineOnly: true,
+    calories: 780,
+    weightGrams: 180,
+  },
+  {
+    id: "moon-02",
+    name: "Matcha Ceremonial Pistachio",
+    category: "snowskin",
+    crustDescription: "Pounded mochi skin infused with Uji ceremonial grade green tea",
+    fillingDescription: "Smooth white peach ganache and roasted Bronte pistachio praline crunch.",
+    price: 195000,
+    imageUrl: "https://images.unsplash.com/photo-1601050690597-df0568f70950?q=80&w=800&auto=format&fit=crop",
+    isOnlineOnly: false,
+    calories: 520,
+    weightGrams: 150,
+  },
+  {
+    id: "moon-03",
+    name: "Black Sesame & Roasted Walnut",
+    category: "baked",
+    crustDescription: "Flaky whole-wheat pastry skin brushed with golden egg wash",
+    fillingDescription: "Intense toasted black sesame paste with crisp California walnut halves.",
+    price: 175000,
+    imageUrl: "https://images.unsplash.com/photo-1509440159596-0249088772ff?q=80&w=800&auto=format&fit=crop",
+    isOnlineOnly: false,
+    calories: 640,
+    weightGrams: 180,
+  },
+  {
+    id: "moon-04",
+    name: "Mao Shan Wang Durian Snowskin",
+    category: "snowskin",
+    crustDescription: "Ultra-thin chilled snowskin dusted with natural pandan starch",
+    fillingDescription: "100% pure Grade-A Pahang Mao Shan Wang durian pulp, unadulterated & chilled.",
+    price: 240000,
+    imageUrl: "https://images.unsplash.com/photo-1541781774459-bb2af2f05b55?q=80&w=800&auto=format&fit=crop",
+    isOnlineOnly: true,
+    calories: 590,
+    weightGrams: 160,
+  },
+  {
+    id: "moon-05",
+    name: "Imperial Harvest Wooden Box (Set of 4)",
+    category: "gift-boxes",
+    crustDescription: "Handcrafted pine wood box with brass clasp and botanical linen furoshiki wrap",
+    fillingDescription: "Contains White Lotus, Matcha Pistachio, Black Sesame Lava, and Oolong Osmanthus.",
+    price: 890000,
+    imageUrl: "https://images.unsplash.com/photo-1578985545062-69928b1d9587?q=80&w=800&auto=format&fit=crop",
+    isOnlineOnly: true,
+    calories: 2500,
+    weightGrams: 750,
+  },
+  {
+    id: "moon-06",
+    name: "Golden Osmanthus Oolong",
+    category: "baked",
+    crustDescription: "Classic Cantonese embossed pastry with floral imprint",
+    fillingDescription: "Tie Guan Yin tea infused red bean paste with sweet osmanthus blossoms.",
+    price: 180000,
+    imageUrl: "https://images.unsplash.com/photo-1587314168485-3236d6710814?q=80&w=800&auto=format&fit=crop",
+    isOnlineOnly: false,
+    calories: 610,
+    weightGrams: 180,
+  },
+];
+
+export async function getMooncakes(): Promise<MooncakeItem[]> {
+  // Simulating async API call
+  return Promise.resolve(MOCK_MOONCAKES);
+}
